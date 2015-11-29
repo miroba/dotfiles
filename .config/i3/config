@@ -85,7 +85,7 @@ set $workspace4  "4"
 set $workspace5  "5"
 set $workspace6  "6"
 set $workspace7  "7: "
-set $workspace8  "8"
+set $workspace8  "8: "
 set $workspace9  "9: "
 set $workspace10 "10: "
 
@@ -245,5 +245,5 @@ for_window [title=""] floating enable
 exec_always --no-startup-id feh --bg-fill --no-fehbg ~/Bilder/Hintergründe/Dual/bg1.jpg --bg-scale --no-fehbg ~/Bilder/Hintergründe/Dual/bg2.jpg 
 exec --no-startup-id i3-msg 'workspace 1: ; exec terminator; workspace 2: ; exec emacs; workspace 7: ; exec terminator --execute cmus; workspace 10: ; exec firefox; layout tabbed; workspace 1: '
 
-# compton, wenn fading nervt f entfernen
-exec --no-startup-id compton -bcCGf --sw-opti --backend glx --vsync opengl-mswc
+# compton, wenn fading nervt f entfernen -bcCG 
+exec --no-startup-id compton --sw-opti --backend glx --vsync opengl-mswc
