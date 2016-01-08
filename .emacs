@@ -8,10 +8,15 @@
  '(custom-enabled-themes (quote (material-light)))
  '(custom-safe-themes
    (quote
-    ("0aa12caf6127772c1a38f7966de8258e7a0651fb6f7220d0bbb3a0232fba967f" "54159ea82516378faa7c4d25fb549b843effb1eb932f0925dce1348de7a659ba" "cb978b7187ea7ac2a3e6bb614d24988301cb5c2c9d1f930dce117792b21ea135" "51867fa64534ff7ca87fdc1537fbfffc168fa4673e3980850436dc87e31ef426" "9e7cc7f1db252d6fe0c7cc25d72d768712a97cda1f77bf63f0c1fd7be5dee7f4" default)))
+    ("870a63a25a2756074e53e5ee28f3f890332ddc21f9e87d583c5387285e882099" "0aa12caf6127772c1a38f7966de8258e7a0651fb6f7220d0bbb3a0232fba967f" "54159ea82516378faa7c4d25fb549b843effb1eb932f0925dce1348de7a659ba" "cb978b7187ea7ac2a3e6bb614d24988301cb5c2c9d1f930dce117792b21ea135" "51867fa64534ff7ca87fdc1537fbfffc168fa4673e3980850436dc87e31ef426" "9e7cc7f1db252d6fe0c7cc25d72d768712a97cda1f77bf63f0c1fd7be5dee7f4" default)))
+ '(matlab-shell-command-switches (quote ("-nodesktop -nosplash")))
  '(org-babel-load-languages (quote ((matlab . t) (python . t) (emacs-lisp . t))))
  '(org-confirm-babel-evaluate nil)
  '(org-export-backends (quote (ascii html icalendar latex md odt koma-letter)))
+ '(org-format-latex-options
+   (quote
+    (:foreground default :background default :scale 1.5 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
+		 ("begin" "$1" "$" "$$" "\\(" "\\["))))
  '(org-latex-classes
    (quote
     (("beamer" "\\documentclass[presentation]{beamer}"
@@ -160,7 +165,7 @@
 ;;----------------------------------------------------------------------
 
 ;; matlab-emacs
-(add-to-list 'load-path "~/Builds/Emacs/matlab-emacs")
+(add-to-list 'load-path "~/Src/Emacs/matlab-emacs")
 (load-library "matlab-load")
 
 ;; python
